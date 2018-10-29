@@ -21,6 +21,7 @@
     ],
     'data': [
         'views/webclient_templates.xml',
+        'views/ir_actions_report.xml',
     ],
     'demo': [
         'demo/report.xml',
