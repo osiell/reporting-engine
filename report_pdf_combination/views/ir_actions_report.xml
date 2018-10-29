@@ -6,6 +6,11 @@
     <field name="model">ir.actions.report</field>
     <field name="inherit_id" ref="base.act_report_xml_view"/>
     <field name="arch" type="xml">
+        <field name="print_report_name" position="attributes">
+            <attribute name="attrs">
+                {'required':[('report_type', '=', 'pdf-combination')]}
+            </attribute>
+        </field>
         <notebook position="inside">
             <page string="Lines" name="lines"
                 attrs="{'invisible': [('report_type', '!=', 'pdf-combination')]}">

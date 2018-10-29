@@ -44,7 +44,7 @@ class ReportController(report.ReportController):
             ('Content-Length', len(file_read)),
             (
                 'Content-Disposition',
-                'attachment; filename=' + report.report_file + '.pdf'
+                'attachment; filename=' + report.print_report_name + '.pdf'
             )
         ]
         return request.make_response(file_read, headers=httpheaders)
